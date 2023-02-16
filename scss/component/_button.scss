@@ -1,0 +1,36 @@
+.btn-primary {
+  position: relative;
+  padding: 18px 45px;
+  border-radius: 4px;
+  background: $primary-color;
+  display: inline-block;
+  border: none;
+  height: 62px;
+  font-size: $button-font-size;
+  font-weight: 700;
+  font-family: $base-font-family1;
+  margin-top: 78px;
+  cursor: pointer;
+  color: $base-white-color;
+  transition: all linear 0.3s;
+  @include box-shadow(0,
+    30px,
+    60px,
+    rgba(0, 0, 0, 0.08));
+  &:hover {
+    transform: scale(1.03);
+  }
+  @media (max-width: 1599.98px) {
+    font-size: 18px;
+  }
+  @media (max-width: 1199.98px) {
+    padding: 13px 32px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 36px;
+  }
+  @media (max-width: 575.98px) {
+    padding: 12px 15px;
+    font-size: 16px;
+  }
+}

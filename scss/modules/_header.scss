@@ -1,0 +1,101 @@
+header.header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+}
+header.header .dflex {
+  padding: 20px 10px;
+  @include d-flex;
+  justify-content: space-between;
+
+  .logo {
+    filter: brightness(0);
+  }
+  .top-icons {
+    @include d-flex;
+  }
+  .top-icons a {
+    font-family: "Rajdhani", sans-serif;
+    color: $base-font-color1;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 10px;
+    &:hover {
+      color: $website-brand-color;
+    }
+  }
+  .top-icons-items {
+    .trigger {
+      display: flex;
+    }
+    padding: 0 10px;
+    cursor: pointer;
+    display: flex;
+
+    &:hover {
+      color: $website-brand-color;
+    }
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: auto;
+      border: 0;
+      padding: 16px;
+      border-radius: 10px;
+      width: 250px;
+      background: #000;
+    }
+    .dropdown-item {
+      padding: 8px 12px;
+      font-size: 16px;
+      color: #fff;
+      font-weight: 700;
+      display: block;
+      &:hover {
+        background: #ecede9;
+        color: #000;
+      }
+      img {
+        margin-right: 3px;
+        display: inline-block;
+      }
+    }
+  }
+  .top-icons em {
+    font-style: normal;
+    align-self: center;
+    font-size: 16px;
+    font-family: "Rajdhani", sans-serif;
+    color: $base-font-color1;
+  }
+  i {
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .icon-skype {
+    background: url(../images/skype.svg) no-repeat;
+  }
+  .icon-envelope {
+    background: url(../images/email.svg) no-repeat;
+  }
+  .icon-phone {
+    background: url(../images/call-icon.svg) no-repeat;
+  }
+
+  @media screen and (max-width: 767px) {
+    .logo img {
+      max-width: 150px;
+    }
+    .top-icons em {
+      font-size: 0;
+    }
+    .top-icons a {
+      padding: 0 3px;
+    }
+  }
+}

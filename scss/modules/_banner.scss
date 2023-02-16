@@ -1,0 +1,114 @@
+.banner{
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 7vw 0 0 0;
+    background: url('./../images/banner_bg.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    .banner-align{
+        display: flex;
+        align-items: center;
+        
+        .banner_right{
+            &::before{
+                content:"";
+                position: absolute;
+                background: url(.././images/banner_slide.png) repeat 0 0;
+                height: 3682px;
+                width: 70vw;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: rotate(21.87deg);
+                animation: slide 20s linear infinite;
+            }
+            @keyframes slide {
+                from {
+                    background-position: 0 0;
+                  }
+                  to {
+                    background-position: 0px -300px;
+                  }
+            }
+            
+        }
+        .banner_left{
+            width: 50%;
+        }
+
+    }
+
+    @media screen and (max-width: 1700px) {
+        .banner-align{
+            .banner_right{
+                &::before{
+                    width: 80vw;
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 1500px) {
+    .banner-align{
+        .banner_right{
+            &::before{
+                width: 84vw;
+        }
+    }
+
+}
+}
+    @media screen and (max-width: 1200px) {
+        .banner-align{
+            .banner_right{
+                &::before{
+                    width: 95vw;
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 1024px) {
+    .banner-align{
+        .banner_right{
+            &::before{
+                width: 100vw;
+        }
+    }
+
+}
+}
+    
+
+
+    @media screen and (max-width: 767px) {
+        min-height: auto;
+        padding: 27.29vw 0 16vw;
+        .banner-align{
+            .banner_right{
+                display: none;
+            }
+            .banner_left{
+                width: 100%;
+                text-align: center;
+                span{
+                    img{
+                        max-width: 32px;
+                    }
+                }
+                h3{
+                    font-size: 3.5vw;
+                }
+            }
+
+        }
+     
+
+    }
+}

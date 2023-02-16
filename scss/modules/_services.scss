@@ -1,0 +1,146 @@
+.services {
+  background: url('.././images/service_bg.png');
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  .item {
+    display: flex;
+    
+    .left{
+        // width: 50%;
+        padding-right: 69px;
+          h5 {
+            padding-top: 90px;
+            font-family: $base-font-family1;
+            font-weight: 400;
+            font-size: 40px;
+            margin-bottom: 28px;
+          }
+          .ve-dev{
+              font-family: $base-font-family1;
+              font-weight: 600;
+              font-size: 24px;
+              margin-bottom: 28px;
+          }
+          p{
+              font-size: 24px;
+              max-width: 656px;
+              font-family: $base-font-family1;
+          }
+    }
+    .right{
+        // width:50%;
+        align-self: end;
+
+        img{
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    .item{
+      .left{
+        padding-right: 50px;
+        h5 {
+          font-size: 30px;
+        }
+        .ve-dev{
+          font-size: 22px;
+        }
+        p{
+          font-size: 20px;
+        }
+
+      }
+    }
+
+  }
+  @media screen and (max-width: 768px) {
+    h2,h4{
+      text-align: center;
+    }
+    .item{
+      .left{
+        padding-right: 50px;
+        h5 {
+          padding-top: 60px;
+          font-size: 24px;
+          margin-bottom: 18px;
+        }
+        .ve-dev{
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+        p{
+            font-size: 16px;
+            max-width: 656px;
+            font-family: $base-font-family1;
+        }
+      }
+
+    }
+
+
+  }
+
+  @media screen and (max-width: 580px) {
+    .item {
+      flex-direction: column-reverse;
+      .left{
+        width: 100%;
+        padding-right: 0px;
+        h5{
+          padding-top: 40px;
+        }
+      }
+      .right{
+        width: 100%;
+        img{
+          padding-top: 60px;
+        }
+      }
+    }
+
+
+  }
+  .owl-dots{
+    display: flex;
+    position: absolute;
+        top: 0px;
+        left: 0;
+    gap:17px;
+    .owl-dot{
+        display: flex;  
+    }
+    .owl-dot button {
+        background: none;
+        font-weight: 400;
+        font-size: 28px;
+        font-family: $base-font-family1;
+        cursor: pointer;
+        border: none;
+        align-self: center;
+      }
+      .owl-dot.active button{
+        width: 53px;
+        height: 53px;
+        border-radius: 50%;
+        border: 1px solid #FF2D20;
+        padding: 0;  
+        align-self: center;
+    }
+    @media screen and (max-width: 768px) {
+        .owl-dot button {
+            font-size: 18px;
+        }
+        .owl-dot.active button{
+            width: 30px;
+            height: 30px;
+        }
+    
+    }
+    
+}
+
+}
+

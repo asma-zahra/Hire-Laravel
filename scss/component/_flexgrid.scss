@@ -1,0 +1,52 @@
+.d-flex {
+    @include d-flex;
+}
+.justify-content-center {
+    @include justify-content-center(center)
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    @include align-items-center(center) 
+}
+.align-self-center {
+    @include align-self-center(center)
+}
+.flex-wrap-wrap {
+    @include flex-wrap-wrap(wrap)
+}
+.flex-direction-column {
+    @include flex-direction-column(column) 
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-6 {
+    flex : 0 0 50%;
+    width: 50%;
+}
+
+.flex-6
+ {
+    padding-left : 1rem;
+    padding-right: 1rem;
+
+    @media (max-width: 767.98px) {
+        flex : 0 0 auto;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+

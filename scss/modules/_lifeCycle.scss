@@ -1,0 +1,103 @@
+.lifecycle{
+    
+    .item{
+        background: url('.././images/arrow.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        background-size: contain;
+        margin-right: 15px;
+        background-position: right top;
+        h5{
+            font-weight: 700;
+            font-size: 245.412px;
+            color: $website-brand-color;
+            font-family: $base-font-family1;
+        }
+        .content{
+            margin-left:25px;
+            position: relative;
+
+            h4{
+                margin-bottom: 20px !important;
+                color: #000;
+                font-family: $base-font-family1;
+                font-weight: 700;
+            }
+            ul{
+                li{
+                    font-family: $base-font-family1;
+                    font-weight: 400;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1600px){
+        .container {
+            max-width: 1750px;
+        }
+    }
+    @media screen and (max-width: 1750px){
+        .container {
+            max-width: 1750px;
+        }
+        .item{
+            h5{
+                font-size: 180px;
+            }
+            .content{
+                ul{
+                    li{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+    }
+    @media screen and (max-width: 1450px){
+        .container {
+            max-width: 1750px;
+        }
+        .item{
+            h5{
+                font-size: 130px;
+            }
+            .content{
+                ul{
+                    li{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .item{
+            max-width: 100%;
+            padding: 50px 0 30px 0;
+
+            img{
+                max-width: 12%;
+            }
+            .content{
+                h4{
+                    margin-bottom: 14px !important;
+                }
+                ul{
+                    li{
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}

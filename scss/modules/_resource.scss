@@ -1,0 +1,111 @@
+.resource{
+    background: $resources-background-color;
+    .resounce_wrapper{
+        display: flex;
+        justify-content: center;
+        .resource_info{
+            display:flex;
+            img{
+                height: 100%;
+            }
+            .project{
+                // background:#A69DFF;
+            }
+            .resource-pic{
+                background: #A69DFF;
+            }
+            .card{
+                display:none;
+                max-width: 330px;
+                height: 100%;
+                width: 100%;
+                background: #FFFFFF;
+                border-radius: 0px 20px 20px 0px;
+                padding: 40px 27px;
+                &.active{
+                    display:block;
+                }
+                h5{
+                    font-size: 24px;
+                    color: $primary-color;
+                    margin-bottom: 10px;
+                   
+                }
+                h6{
+                    font-size: 20px;
+                    font-family: $base-font-family1;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 18px;
+                    font-family: $base-font-family1;
+                }
+                button{
+                    margin-top: 20px;
+                }
+            }
+        }
+        .Image_list{
+            display:flex;
+            .list{
+                display: none;
+                max-width: 143px;
+                width: 100%;
+                background: linear-gradient(174.71deg, #C3C4C6 -16.32%, rgba(195, 196, 198, 0) 123.05%);
+                border-radius: 20px;
+                &:nth-child(n){
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+                &:hover{
+                    filter: grayscale(1);
+
+                }
+            }
+            .active{
+                display:flex;
+            }
+      
+        }
+    }
+    @media screen and (max-width: 1029px) {
+        .resounce_wrapper{
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+            .Image_list{
+                justify-content: center;
+                padding-top: 30px;
+            }
+            
+        }
+
+    }
+    @media screen and (max-width: 768px) {
+        .resounce_wrapper{
+            .resource_info{
+                .project{
+                    display: none;
+                }
+                .resource-pic{
+                    display: none;
+                }
+                .card{
+                    max-width: 100%;
+                }
+            }
+          
+        }
+
+    }
+
+    @media screen and (max-width: 580px) {
+        .resounce_wrapper{
+            .resource_info{
+                .project{
+                    display: none;
+                }
+            }
+    }
+}
+}

@@ -1,0 +1,211 @@
+.get_trail_section {
+  padding: 100px 0;
+  background: $form-input-color;
+  .get_trail_section_wrapper {
+    margin: 0 auto;
+    max-width: 1360px;
+
+    .get_started_left {
+      @extend .shadow;
+      border-radius: 20px 0 0 20px;
+      background-color: $website-brand-color;
+      padding: 84px;
+      h2 {
+        max-width: 449px;
+      }
+      h4 {
+        color: white;
+        font-family: $base-font-family1;
+      }
+      ul {
+        li {
+          margin: 29px 0;
+          position: relative;
+          padding-left: 45px;
+          font-family: $base-font-family1;
+          font-size: 24px;
+          &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 24px;
+            background: $website-brand-color;
+            z-index: 1;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: 2%;
+            top: 23px;
+            height: 100%;
+            border: 2px dashed #ffffff;
+          }
+          &:nth-child(1) {
+            &::before {
+              background: url(".././images/one.svg");
+            }
+          }
+          &:nth-child(2) {
+            &::before {
+              background: url(".././images/two.svg");
+            }
+          }
+          &:nth-child(3) {
+            &::before {
+              background: url(".././images/three.svg");
+            }
+          }
+          &:nth-child(4) {
+            &::before {
+              background: url(".././images/four.svg");
+            }
+            &::after {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+    .get_started_right {
+      @extend .shadow;
+      border-radius: 0 20px 20px 0;
+      padding: 60px 146px;
+      background: #ffffff;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    padding: 50px 0px 50px 0;
+    .flex-6 {
+      flex: 0 0 100%;
+      width: 100%;
+    }
+    .get_started_form {
+      margin: 0 auto;
+    }
+    .get_trail_section_wrapper {
+      align-items: center;
+      .get_started_left {
+        padding: 50px;
+        border-radius: 20px 20px 0 0;
+        h2,
+        h4 {
+          max-width: 100%;
+          text-align: center;
+        }
+        .form-points {
+          justify-content: center;
+          ul {
+            li {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .get_started_right {
+        border-radius: 0 0 20px 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    .get_started_left {
+      h2 {
+        font-size: 32px;
+      }
+      h4 {
+        font-size: 24px;
+        margin-bottom: 55px;
+      }
+      .form-points {
+        ul {
+          li {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .get_started_left {
+      h2 {
+        font-size: 27px;
+      }
+      h4 {
+        font-size: 22px;
+        margin-bottom: 35px;
+      }
+      .form-points {
+        ul {
+          li {
+            font-size: 18px;
+            &::after {
+              left: 3%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 991.98px) {
+    padding: 50px 0px 50px 0;
+    .flex-6 {
+      flex: 0 0 100%;
+      width: 100%;
+    }
+    .get_started_form {
+      margin: 0 auto;
+    }
+    .get_trail_section_wrapper {
+      align-items: center;
+      .get_started_left {
+        padding: 50px;
+        border-radius: 20px 20px 0 0;
+        h2,
+        h4 {
+          max-width: 100%;
+          text-align: center;
+        }
+        .form-points {
+          display: flex;
+          justify-content: center;
+          ul {
+            li {
+              &::after {
+                left: 2%;
+              }
+            }
+          }
+        }
+      }
+      .get_started_right {
+        border-radius: 0 0 20px 20px;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .get_started_left {
+      h2 {
+        font-size: 23px;
+      }
+      h4 {
+        font-size: 20px;
+        margin-bottom: 35px;
+      }
+      .form-points {
+        ul {
+          li {
+            &::after {
+              left: 10px !important;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+}
