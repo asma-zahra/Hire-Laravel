@@ -1,7 +1,9 @@
 @import 'partials/var';
 @import 'component/mixins';
+@import 'component/scrollbar';
 @import 'modules/header';
 @import 'modules/layout';
+@import 'modules/slickslider';
 @import 'component/button';
 @import 'component/flexgrid';
 @import 'modules/banner';
@@ -11,6 +13,7 @@
 @import 'modules/form';
 @import 'modules/lifeCycle';
 @import 'modules/client_slider';
+@import 'modules/popup';
 @import 'owl-carousal/owl.carousel';
 @import 'sass/aos';
 

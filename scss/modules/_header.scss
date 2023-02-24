@@ -53,13 +53,13 @@ header.header .dflex {
       font-size: 16px;
       color: #fff;
       font-weight: 700;
-      display: block;
+      display: flex;
       &:hover {
         background: #ecede9;
         color: #000;
       }
       img {
-        margin-right: 3px;
+        margin-right: 9px;
         display: inline-block;
       }
     }
